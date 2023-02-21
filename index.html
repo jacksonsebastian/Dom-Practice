@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="myDiv" class="myClass"></div>
+    <hr>
+
+    <form name="myForm" action="./formWelcome.html" onsubmit="return validate()">
+        name:
+        <input type="text" name= "firstName" placeholder="Please enter" value="" >
+        <input type="submit" value="submit">
+    </form>
+
+    <hr>
+    <!-- <button onclick="moveChild()" >Click </button> -->
+    <div id="parent">
+        <div id="child"></div>
+    </div>
+    <hr>
+    <div>
+        <button onclick="alert('hi')">Click</button>
+        <button onclick="count()" >click</button>
+        <!-- // onclick="document.getElementById('text').style.color = 'blue'" -->
+        <button id="button">hello</button>
+        <p id="text" >Hellow</p> 
+    </div>
+    <hr>
+    
+    <script src="./script.js"></script>
+</body>
+
+</html>
