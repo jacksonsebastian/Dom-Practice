@@ -88,12 +88,26 @@ button.onclick = function() {
 function click() {
     document.getElementById('text').style.color = "red"
 }
-
-text.onclick = click;
-
+text.onclick = click
 
 
+document.getElementById('listen').addEventListener('click', function(){
+    this.style.color = "white"
+    this.style.backgroundColor = "gray"
+    this.style.border = "1px solid red"
+})
 
+var user = document.getElementById('user');
+
+user.addEventListener('click', one);
+user.addEventListener('click', two);
+function one() {
+    this.innerHTML = "Hi Arthi"
+}
+
+function two() {
+    this.style.color = "red"
+}
 
 
 
